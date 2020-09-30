@@ -20,5 +20,7 @@
   },
   "homepage": "https://github.com/ivanheral/koa-hello-world#readme",
   "dependencies": {
+    "express": "^4.17.1",
+    "koa": "^2.13.0"
   }
 }
