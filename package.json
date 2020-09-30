@@ -1,0 +1,22 @@
+{
+  "name": "koa-hello-world",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ivanheral/koa-hello-world.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ivanheral/koa-hello-world/issues"
+  },
+  "homepage": "https://github.com/ivanheral/koa-hello-world#readme",
+  "devDependencies": {
+    "koa": "^2.13.0"
+  }
+}
