@@ -16,7 +16,7 @@
     "url": "https://github.com/ivanheral/koa-hello-world/issues"
   },
   "homepage": "https://github.com/ivanheral/koa-hello-world#readme",
-  "devDependencies": {
+  "dependencies": {
     "express": "^4.17.1"
   }
 }
