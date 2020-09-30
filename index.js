@@ -1,26 +1,14 @@
-const Koa = require('koa');
+import { serve } from "https://deno.land/std@0.59.0/http/server.ts";
+import { parse } from "https://deno.land/std/flags/mod.ts";
 
-const app = module.exports = new Koa();
+const { args } = Deno;
+const PUERTO_DEFAULT = 8000;
+const puerto = parse(args).port;
+const server = serve({ port: puerto ? Number(puerto) : PUERTO_DEFAULT });
 
-app.use(async function pageNotFound(ctx) {
-  // we need to explicitly set 404 here
-  // so that koa doesn't assign 200 on body=
-  ctx.status = 404;
+for await (const peticion of server ) {
+  const colorRandom = Math.floor(Math.random() * 16777215).toString(16);
+  const contenidos = `<h1 style="color:#${colorRandom}">HOLA DENO!</h1>`;
 
-  switch (ctx.accepts('html', 'json')) {
-    case 'html':
-      ctx.type = 'html';
-      ctx.body = '<p>Page Not Found</p>';
-      break;
-    case 'json':
-      ctx.body = {
-        message: 'Page Not Found'
-      };
-      break;
-    default:
-      ctx.type = 'text';
-      ctx.body = 'Page Not Found';
-  }
-});
-
-if (!module.parent) app.listen(3000);
+  peticion.respond({ body: contenidos });
+}
