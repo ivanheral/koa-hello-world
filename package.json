@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
     "scripts": {
-    "start": "nodemon --experimental-modules ./app --watch"
+    "start": "nodemon --experimental-modules index.js --watch"
   },
   "engines": {
     "node": "12.x"

@@ -1,1 +1,1 @@
-web: node --harmony ./app/index.js
+web: node --harmony index.js
