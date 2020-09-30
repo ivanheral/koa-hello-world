@@ -20,10 +20,9 @@
   },
   "homepage": "https://github.com/ivanheral/koa-hello-world#readme",
   "dependencies": {
-    "express": "^4.17.1",
-    "koa": "^2.5.1",
-    "koa-bodyparser": "^4.2.1",
+    "koa": "^2.13.0",
+    "koa-bodyparser": "^4.3.0",
     "koa-router": "^7.4.0",
-    "nodemon": "^1.17.5"
+    "nodemon": "^2.0.4"
   }
 }
