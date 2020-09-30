@@ -1,1 +1,1 @@
-web: node --experimental-modules app
+web: node --harmony ./app/index.js

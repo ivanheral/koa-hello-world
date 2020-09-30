@@ -2,9 +2,8 @@
   "name": "koa-hello-world",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
-  "scripts": {
-    "start": "nodemon --experimental-modules app --watch"
+    "scripts": {
+    "start": "nodemon --experimental-modules ./app --watch"
   },
   "engines": {
     "node": "12.x"
