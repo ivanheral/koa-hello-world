@@ -5,7 +5,11 @@
   "main": "main.js",
   "dependencies": {
     "express": "^4.17.1",
-    "koa": "^2.13.0"
+    "koa": "^2.13.0",
+    "nodemon": "^2.0.4"
+  },
+  "scripts": {
+    "start": "nodemon index.js"
   },
   "devDependencies": {},
   "repository": {
