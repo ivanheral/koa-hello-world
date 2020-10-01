@@ -1,12 +1,9 @@
-const express = require('express')
-const app = express()
 const port = process.env.PORT || 5000
+const Koa = require('koa');
+const app = new Koa();
 
-app.get('/', (req, res) => {
-  res.send('Hello World!')
-})
+app.use(async ctx => {
+  ctx.body = 'Hello World';
+});
 
-
-app.listen(port, () => {
-  console.log(`Example app listening at http://localhost:${port}`)
-})
+app.listen(port);
